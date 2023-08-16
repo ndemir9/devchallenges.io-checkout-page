@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+
+  <title>Devchallenges</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <section id="checkout" class="container">
+    <h1>Checkout</h1>
+
+    <div class="checkout-wrapper">
+      <div class="user-info">
+        <form action="#">
+          <h5>Contact infomation</h5>
+          <div class="form-group">
+            <label>E-mail</label>
+            <div class="input-icon-group">
+              <span class="material-icons">mail</span>
+              <input type="text" placeholder="Enter your email..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <div class="input-icon-group">
+              <span class="material-icons">call</span>
+              <input type="text" placeholder="Enter your phone..." />
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <h5>Shipping address</h5>
+          <div class="form-group">
+            <label>Full name</label>
+            <div class="input-icon-group">
+              <span class="material-icons">account_circle</span>
+              <input type="text" placeholder="Enter full name..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <div class="input-icon-group">
+              <span class="material-icons">home</span>
+              <input type="text" placeholder="Your address..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>City</label>
+            <div class="input-icon-group">
+              <span class="material-icons">apartment</span>
+              <input type="text" placeholder="Your city..." />
+            </div>
+          </div>
+          <div class="form-group-row">
+            <div class="form-group flex-1">
+              <label>Address</label>
+              <div class="input-icon-group">
+                <span class="material-icons">public</span>
+                <select id="country">
+                  <option value="" disabled selected hidden>Your country...</option>
+                  <option value="TR">TR</option>
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                </select>
+                <!-- <label for="country" class="select-down-arrow"><span class="material-icons">expand_more</span></label> -->
+              </div>
+            </div>
+            <div class="form-group flex-1">
+              <label>Postal code</label>
+              <div class="input-icon-group">
+                <span class="material-icons">markunread_mailbox</span>
+                <input type="text" placeholder="Your postal code..." />
+              </div>
+            </div>
+          </div>
+          <div class="form-group flex align-item-center gap-md mt-1">
+            <input type="checkbox" class="check-input">
+            <p class="smfontsize">Save this information for next time</p>
+          </div>
+          <div class="flex align-item-center justify-content-end"><button class="primary-button mt-1">Continue</button>
+          </div>
+        </form>
+      </div>
+      <div class="total-basket">
+        <div class="product">
+          <div class="product-item">
+            <img src="./photo1.png" alt="">
+            <div class="flex flex-column">
+              <strong>Vintage Backbag</strong>
+              <div class="price">
+                <span class="mdfontsize text-orange">$54.99</span>
+                <span class="smfontsize text-line-through">$94.99</span>
+              </div>
+              <div class="counter">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="./photo2.png" alt="">
+            <div class="flex flex-column">
+              <strong>Vintage Backbag</strong>
+              <div class="price">
+                <span class="mdfontsize text-orange">$54.99</span>
+                <span class="smfontsize text-line-through">$94.99</span>
+              </div>
+              <div class="counter">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shipping-price"><span class="lgfontsize">Shipping</span><span>$19</span></div>
+        <div class="total-price"><span class="lgfontsize">Total</span><span>$148.98</span></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div class="loading">
+    <div>Loading...</div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

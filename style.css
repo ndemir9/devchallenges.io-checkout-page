@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --white: #FFFFFF;
+
+    --extralightblack: #4E5150;
+    --lightblack: #333333;
+    --black: #000000;
+
+    --lightgray: #828282;
+    --gray: #4F4F4F;
+    --extralightgray: #F2F2F2;
+
+    --bordercolor: #828282;
+    --orange: #F2994A;
+
+    --h1Fontsize: 36px;
+    --inputPlaceholderFontsize: 16px;
+    --inputiconsize: 24px;
+    --inputiconcolor: #828282;
+
+    --smfontsize: 12px;
+    --mdfontsize: 16px;
+    --lgfontsize: 18px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --h1Fontsize: 36px;
+        --inputPlaceholderFontsize: 12px;
+        --inputiconsize: 18px;
+
+        --smfontsize: 10px;
+        --mdfontsize: 12px;
+        --lgfontsize: 14px;
+    }
+}
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--montserrat);
+    color: var(--lightblack);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 4rem 1rem;
+    margin-inline: auto;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.primary-button {
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-size: var(--mdfontsize);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+.primary-button:hover {
+    opacity: .8;
+    transition: 250ms ease;
+}
+
+.smfontsize {
+    font-size: var(--smfontsize);
+}
+
+.mdfontsize {
+    font-size: var(--mdfontsize);
+}
+
+.lgfontsize {
+    font-size: var(--lgfontsize);
+}
+
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.gap-sm {
+    gap: 12px;
+}
+
+.gap-md {
+    gap: 16px;
+}
+
+.gap-lg {
+    gap: 18px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer {
+    padding: 2rem 0;
+}
+
+/* Checkout */
+
+#checkout h1 {
+    font-size: var(--h1Fontsize);
+    color: var(--extralightblack);
+}
+
+#checkout .checkout-wrapper {
+    display: flex;
+    padding: 4rem 0;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+#checkout .user-info, #checkout .total-basket {
+    width: 100%;
+}
+
+
+
+#checkout .checkout-wrapper .user-info, #checkout .checkout-wrapper .total-basket {
+    flex: 1;
+}
+
+#checkout .checkout-wrapper h5 {
+    font-size: var(--lgfontsize);
+}
+
+/* //Checkout */
+
+/* checkout-wrapper */
+
+.form-group-row {
+    display: flex;
+    gap: 24px;
+}
+
+.form-group {
+    padding: .6rem 0;
+}
+
+
+.form-group label {
+    font-size: var(--smfontsize);
+    margin-bottom: .4rem;
+    display: block;
+}
+
+.form-group .input-icon-group {
+    background-color: transparent;
+    border: 1px solid var(--bordercolor);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+.form-group .input-icon-group span {
+    font-size: var(--inputiconsize);
+    color: var(--inputiconcolor);
+}
+
+.form-group .input-icon-group input, .form-group .input-icon-group select {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    text-indent: 1rem;
+    font-weight: 600;
+    font-size: var(--mdfontsize);
+    color: var(--lightblack);
+}
+
+
+
+.form-group .input-icon-group input::placeholder {
+    font-size: var(--inputPlaceholderFontsize);
+    font-weight: 600;
+    color: var(--bordercolor);
+}
+
+
+.form-group .check-input {
+    width: 21px;
+    height: 21px;
+}
+
+/* //checkout-wrapper */
+
+
+/* total-basket */
+
+.total-basket {
+    border-radius: 12px;
+    background-color: var(--extralightgray);
+    padding: 2rem;
+}
+
+.total-basket .product .product-item {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 2rem;
+}
+
+.total-basket .product .product-item:last-child {
+    margin-bottom: 4rem;
+}
+
+.total-basket .product .product-item strong {
+    font-size: var(--mdfontsize);
+}
+
+.total-basket .product .product-item img {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.total-basket .product .product-item .price {
+    padding: .875rem 0;
+}
+
+.total-basket .product .product-item .counter {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid var(--bordercolor);
+    padding: 1rem;
+}
+
+.total-basket .product .product-item .counter input {
+    width: 50px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    text-align: center;
+}
+
+.total-basket .product .product-item .counter button {
+    border: 0;
+    outline: 0;
+    background-color: #e0e0e0;
+    color: var(--lightgray);
+    cursor: pointer;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.total-basket .shipping-price, .total-basket .total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid #BDBDBD;
+}
+
+/* //total-basket */
+
+
+
+@media (max-width: 768px) {
+    #checkout .checkout-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #checkout .checkout-wrapper .user-info, #checkout .checkout-wrapper .total-basket {
+        flex: none;
+    }
+}
